@@ -87,6 +87,7 @@ type SheetValueAtUser struct {
 	TextType            string `json:"textType"`            // 指定text字段的传入的内容，可选email，openId，unionId；
 	Notify              bool   `json:"notify"`              // 是否发送飞书消息，没有阅读权限的用户不会收到飞书消息；
 	GrantReadPermission bool   `json:"grantReadPermission"` // 是否赋予该用户阅读权限（仅在独立表格中支持该字段）；
+	UserID              string `json:"userId"`              // 用户 id，区分 openId，userId；
 }
 
 // 公式
